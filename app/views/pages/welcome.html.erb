@@ -1,5 +1,5 @@
-<div>
-    <h1>Welcome</h1>
-    <p>This is the landing page</p>
-    <p>This page is a placeholder</p>
-</div>
+
+<% @posts.each do |post| %>
+    <%= render 'posts/post', post: post %>
+<% end %>
+
